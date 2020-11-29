@@ -24,6 +24,20 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # CUSTOM DEPENDENCIES
+  #
+  # Comment out flutter_facebook_auth and it works fine. Add it back in, and
+  # this will crash with the following error every time, as Flutter has
+  # silently stopped registering plugins when the Facebook plugin fails to
+  # register:
+  #
+  # Unhandled Exception: MissingPluginException(
+  #   No implementation found for method getAll on channel plugins.flutter.io/shared_preferences
+  # )
+  flutter_facebook_auth: '1.0.2'
+  shared_preferences: '0.5.6'
+  # END CUSTOM DEPENDENCIES
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
